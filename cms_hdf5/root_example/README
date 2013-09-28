@@ -1,0 +1,28 @@
+################################################################################
+# README
+################################################################################
+
+Example of using the Python implementation of ROOT to grab data from a ROOT file
+and pull out specific pieces of the code. 
+
+This example assumes that the file contains a TTree object called ``data" and 
+that that TTree contains the data members referenced in the code 
+(e.g. Jet_E, Muon_Px, etc.).
+
+Usage: 
+
+python dump_root_to_text_file.py <ROOT file>
+
+The data files (ROOT files) can be downloaded from 
+
+http://ippog.web.cern.ch/sites/ippog.web.cern.ch/files/HEPTutorial.tar_.gz
+
+ROOT:
+http://root.cern.ch/drupal/
+
+TFile:
+http://root.cern.ch/root/html/TFile.html
+
+TTree:
+http://root.cern.ch/root/html/TTree.html
+
