@@ -26,3 +26,9 @@ http://root.cern.ch/root/html/TFile.html
 TTree:
 http://root.cern.ch/root/html/TTree.html
 
+
+#######
+# INSTALLING ROOT
+#######
+
+    yaourt -S root
