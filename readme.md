@@ -1,9 +1,11 @@
 # Convert a ROOT file to HDF5
 
-Dependencies (arch)
+I wrote an example script of how to convert a ROOT file to HDF5.
+
+Install dependencies (arch)
 
     make dep
 
-Demo
+Run the demo.
 
     make
