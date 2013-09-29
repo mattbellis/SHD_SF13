@@ -18,11 +18,13 @@ Install dependencies. You need
 * ROOT
 * Python 2.7
 * `/usr/lib/root` in your `PYTHONPATH`
+* `wget`
 
-On Arch, you can just run.
+On Arch Linux, you can just run.
 
     make dep
 
-Download the datasets, and run the demo.
+Once you have the dependencies, this is how you download the datasets
+and run the demo.
 
     make
