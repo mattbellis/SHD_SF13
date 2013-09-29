@@ -32,3 +32,10 @@ http://root.cern.ch/root/html/TTree.html
 #######
 
     yaourt -S root
+
+####
+# Writing HDF5
+####
+
+* http://www.pytables.org/moin
+* http://code.google.com/p/h5py/
