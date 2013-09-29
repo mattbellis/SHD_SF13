@@ -8,12 +8,12 @@ def root2hdf5(in_file, out_file):
 
     for i in xrange(in_tree.GetEntries()):
         out_dataset = out_group.create_dataset(str(i), (in_tree.GetEntry(i), in_tree.NJet, 5))
-        for j in xrange(in_tree.GetEntry(i)):
-            out_dataset[i,j,0] = in_tree.Jet_E[j]
-            out_dataset[i,j,1] = in_tree.Jet_Px[j]
-            out_dataset[i,j,2] = in_tree.Jet_Py[j]
-            out_dataset[i,j,3] = in_tree.Jet_Pz[j]
-            out_dataset[i,j,4] = in_tree.Jet_btag[j]
+        print out_dataset
+        out_dataset[i,:,0] = in_tree.Jet_E
+        out_dataset[i,:,1] = in_tree.Jet_Px
+        out_dataset[i,:,2] = in_tree.Jet_Py
+        out_dataset[i,:,3] = in_tree.Jet_Pz
+        out_dataset[i,:,4] = in_tree.Jet_btag
 
 def main():
     import sys
