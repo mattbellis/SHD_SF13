@@ -1,7 +1,10 @@
 import numpy as np
 import ROOT
+import h5py
 
-
+def root2hdf5(infile, outfile):
+    tree = infile.Get("data")
+    tree.Print()
 
 if __name__ == '__main__':
     import sys
